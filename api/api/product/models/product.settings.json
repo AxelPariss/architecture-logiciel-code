@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "Product"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "Red",
+        "Blue",
+        "Yellow",
+        "Green",
+        "Black"
+      ]
+    },
+    "material": {
+      "type": "enumeration",
+      "enum": [
+        "wood",
+        "metal"
+      ]
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}
