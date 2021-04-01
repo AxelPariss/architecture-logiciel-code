@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "03/19/2021 3:19:38 PM"
+    "x-generation-date": "04/01/2021 9:23:31 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3320,25 +3320,11 @@
                 "description": {
                   "type": "string"
                 },
-                "color": {
-                  "type": "string",
-                  "enum": [
-                    "Red",
-                    "Blue",
-                    "Yellow",
-                    "Green",
-                    "Black"
-                  ]
-                },
-                "material": {
-                  "type": "string",
-                  "enum": [
-                    "wood",
-                    "metal"
-                  ]
-                },
                 "price": {
                   "type": "number"
+                },
+                "options": {
+                  "type": "object"
                 },
                 "created_by": {
                   "type": "string"
@@ -3348,6 +3334,9 @@
                 }
               }
             }
+          },
+          "products_options": {
+            "type": "object"
           }
         }
       },
@@ -3358,6 +3347,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "products_options": {
+            "type": "object"
           },
           "created_by": {
             "type": "string"
@@ -3381,25 +3373,11 @@
           "description": {
             "type": "string"
           },
-          "color": {
-            "type": "string",
-            "enum": [
-              "Red",
-              "Blue",
-              "Yellow",
-              "Green",
-              "Black"
-            ]
-          },
-          "material": {
-            "type": "string",
-            "enum": [
-              "wood",
-              "metal"
-            ]
-          },
           "price": {
             "type": "number"
+          },
+          "options": {
+            "type": "object"
           }
         }
       },
@@ -3411,25 +3389,11 @@
           "description": {
             "type": "string"
           },
-          "color": {
-            "type": "string",
-            "enum": [
-              "Red",
-              "Blue",
-              "Yellow",
-              "Green",
-              "Black"
-            ]
-          },
-          "material": {
-            "type": "string",
-            "enum": [
-              "wood",
-              "metal"
-            ]
-          },
           "price": {
             "type": "number"
+          },
+          "options": {
+            "type": "object"
           },
           "created_by": {
             "type": "string"
