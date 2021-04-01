@@ -43,6 +43,7 @@ function App() {
         c.quantity++
       }
     }
+    
 
     if (alreadyExist) {
       setCart([...cart])
@@ -53,7 +54,7 @@ function App() {
       }
       setCart([...cart, p])
     }
-    
+
     handleClose()
   }
 
