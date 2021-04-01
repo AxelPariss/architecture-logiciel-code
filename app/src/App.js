@@ -43,7 +43,7 @@ function App() {
         c.quantity++
       }
     }
-    
+  
 
     if (alreadyExist) {
       setCart([...cart])
