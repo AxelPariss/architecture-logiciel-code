@@ -6,8 +6,16 @@ import reportWebVitals from './reportWebVitals';
 import { ApolloProvider } from '@apollo/client';
 import { ApolloClient, InMemoryCache } from '@apollo/client';
 
+
+let uri = 'http://localhost:1337/graphql'
+if (process.env.NODE_ENV === 'production') {
+  uri = 'https://architecture-logiciel-code.herokuapp.com/graphql'
+}
+
+
+
 const client = new ApolloClient({
-  uri: 'http://localhost:1337/graphql',
+  uri: uri,
   cache: new InMemoryCache()
 });
 
