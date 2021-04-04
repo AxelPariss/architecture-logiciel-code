@@ -22,6 +22,6 @@ it('post a product in cart should return forbidden when not authentificated', as
       products: [1],
       products_options: JSON.stringify({}),
     })
-    .expect(403) // Expect response http code 200
+    .expect(403)
   done();
 });
